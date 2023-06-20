@@ -1,0 +1,58 @@
+.MainContainer {
+  margin: 1rem;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  padding: 1.5rem;
+}
+
+.btn {
+  margin: 1rem;
+  padding: 0.5rem;
+  background-color: #eae8ef;
+  border-radius: 3px;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.cardContainer {
+  display: grid;
+  grid-template-columns: 300px 300px 300px 300px;
+  gap: 12px;
+  justify-content: center;
+  margin: 2rem;
+  margin-left: 2rem;
+  margin-top: 4rem;
+}
+
+.card {
+  margin: 2rem;
+}
+
+.img {
+  size: 4rem;
+  height: 23rem;
+  width: 5rem;
+}
+
+.content{
+  height: 5rem;
+}
+
+.Buybutton {
+  border: 1px solid;
+  text-decoration: none;
+  color: black;
+  background-color: #eae8ef;
+  padding: 0.5rem;
+  border-radius: 3px;
+  margin-left:5rem;
+}
