@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
+import { AiOutlineShoppingCart } from "react-icons/ai";
 
 export const Navbar = () => {
   const [click, setClick] = useState(false);
@@ -11,7 +12,9 @@ export const Navbar = () => {
       <nav className="navbar">
         <div className="nav-container">
           <NavLink to="/" className="nav-logo">
-            Logo
+            <h3>
+              Libraty<span>Libraty</span>
+            </h3>
           </NavLink>
 
           <ul className={click ? "nav-menu active" : "nav-menu"}>
@@ -27,7 +30,7 @@ export const Navbar = () => {
             </li>
             <li className="nav-item">
               <NavLink
-                to="/product"
+                to="/products"
                 activeClassName="active"
                 className="nav-links"
                 onClick={handleClick}
@@ -56,14 +59,12 @@ export const Navbar = () => {
               </NavLink>
             </li>
             <div className="trolly">
-              <li className="nav-item">
-                <NavLink
-                  to="/contact"
-                  activeClassName="active"
-                  className="nav-links"
-                  onClick={handleClick}
-                >
-                  Contact
+              <li className="trolly-nav-item">
+                <NavLink to="" activeClassName="active" onClick={handleClick}>
+                  <AiOutlineShoppingCart
+                    size={30}
+                    style={{ marginLeft: "24rem" }}
+                  />
                 </NavLink>
               </li>
             </div>

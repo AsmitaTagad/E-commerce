@@ -1,6 +1,7 @@
 import React from "react";
 import style from "./Home.module.css";
-import { Product } from "../product/Product";
+import { Products } from "../products/Products";
+import { Footer } from "../footer/Footer";
 
 function Home() {
   return (
@@ -17,10 +18,14 @@ function Home() {
         </div>
     </div>
     <div className={style.productCard}>
-        <Product />
+        <Products />
       </div>
+      <div>
+      <Footer/>
+      </div>
+      
     </>
   );
-}
+}   
 
 export default Home;
